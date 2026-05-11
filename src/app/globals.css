@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=DM+Mono:wght@400;500&display=swap");
+
+:root {
+  --bg: #f5f0e8;
+  --surface: #fffdf7;
+  --border: #d4c9b0;
+  --border-strong: #a89880;
+  --ink: #1a1208;
+  --ink-muted: #6b5c44;
+  --ink-faint: #a89880;
+  --accent: #c0392b;
+  --accent-soft: #f5e6e4;
+  --stamp-1: #c0392b;
+  --stamp-2: #2471a3;
+  --stamp-3: #1e8449;
+  --stamp-4: #d35400;
+  --stamp-5: #7d3c98;
+  --stamp-6: #1a5276;
+  --font-display: "Noto Serif KR", "Apple SD Gothic Neo", serif;
+  --font-mono: "DM Mono", "Menlo", monospace;
+  --radius: 2px;
+  --shadow: 2px 3px 8px rgba(26, 18, 8, 0.12);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+* { box-sizing: border-box; }
+
+/* MapLibre attribution */
+.maplibregl-ctrl-attrib {
+  font-family: var(--font-mono) !important;
+  font-size: 10px !important;
+  background: rgba(245, 240, 232, 0.85) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
